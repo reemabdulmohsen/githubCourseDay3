@@ -5,7 +5,7 @@ on:
     branches:
       - "*"
 
-jobs: #object : on, name, jobs...
+jobs: #object : on, name, jobs... d
   bash:
     runs-on: ubuntu-latest
     steps:
