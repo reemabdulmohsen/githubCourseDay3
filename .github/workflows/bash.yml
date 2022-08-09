@@ -13,8 +13,8 @@ jobs:
       - name: run bash command
         env:
           MY_SECRET: ${{ secrets.MY_SECRET }}
-      - run: |
+        run: |
           echo $MY_SECRET
-          
+
 
         
