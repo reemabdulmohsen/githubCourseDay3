@@ -5,9 +5,12 @@ on:
     branches:
       - "*"
 
-jobs: #object : on, name, jobs... d
+jobs: #object : on, name, jobs...
   bash:
     runs-on: ubuntu-latest
     steps:
       - uses: action/checkout@v3
-      - run: 'echo "hi"'
+      - run: |
+          exit 1
+
+        
