@@ -10,7 +10,10 @@ jobs: #object : on, name, jobs...
     runs-on: ubuntu-latest
     steps:
       - uses: action/checkout@v3
+      - name: run bash command
+        env:
+          MY_SECRET: ${{ secrets.MY_SECRET }}
       - run: |
-          exit 1
+          echo $MY_SECRET
 
         
